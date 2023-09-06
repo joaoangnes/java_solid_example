@@ -15,6 +15,13 @@ public class TestCalculoArea {
         Figura f = new Figura(tr);
 
         System.err.println("Area do Triangulo: "+ f.CalcArea());
-        System.err.println("Perimetro do Triangulo: "+ f.CalcPerimetro());
+        System.err.println("Perimetro do Triangulo: "+ f.CalcPerimetro()+"\n");
+
+        Circulo cr = new Circulo();
+        cr.raio = 2.5;
+
+        Figura fCr = new Figura(cr);
+        System.err.println("Area do Circulo: "+ fCr.CalcArea());
+        System.err.println("Perimetro do Circulo: "+ fCr.CalcPerimetro()+"\n");
     }
 }
